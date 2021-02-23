@@ -1,0 +1,54 @@
+.top-header {
+  background-color: #192330;
+  padding: 21px 0px 21px 0px;
+
+  span a {
+    margin-right: 30px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ababab;
+  }
+
+  .top-content {
+    span .fa {
+      margin-right: 5px;
+    }
+  }
+  .icon-header {
+    text-align: right;
+    .active {
+      color: #119d90;
+    }
+    a {
+      padding-left: 16px;
+      color: #ababab;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .top-header span a {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .top-content {
+    text-align: center;
+  }
+  .top-header span a {
+    margin-right: 42px;
+  }
+  .icon-header {
+    display: none;
+  }
+  .search-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-header span a {
+    font-size: 8px;
+  }
+}

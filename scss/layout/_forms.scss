@@ -1,0 +1,38 @@
+.contact-wrapper {
+  background-color: #f0f0f0;
+
+  .contact-header {
+    margin-top: 100px;
+    text-align: center;
+
+    h1 {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  .contact-form {
+    margin: 80px 15px 130px 15px;
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      background-color: #ebebeb;
+      color: #8e8e8e;
+    }
+    input[type="submit"] {
+      background-color: #039285;
+      color: white;
+      padding: 12px 0px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+}

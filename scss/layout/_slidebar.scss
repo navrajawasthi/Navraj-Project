@@ -1,0 +1,124 @@
+.hero-slider-wrap {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+
+    li {
+      list-style: none;
+      width: 10px;
+      height: 10px;
+      background-color: #414141;
+      display: inline-block;
+      margin: 0px 10px;
+
+      button {
+        display: none;
+      }
+      li.slick-active {
+        border: 3px solid #a6a6a6;
+      }
+    }
+  }
+  .slick-arrow {
+    display: none !important;
+  }
+  .slider-item {
+    position: relative;
+  }
+  .slider-content {
+    position: absolute;
+    top: 50%;
+    max-width: 800px;
+    color: white;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+    span {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 0.2;
+      font-size: 55px;
+    }
+    p {
+      line-height: 2;
+      margin-top: 45px;
+      margin-bottom: 65px;
+      font-size: 13px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: transparent;
+      padding: 10px 30px 10px 30px;
+      border: 1px solid white;
+      transition: 0.5s ease;
+
+      &:hover {
+        background-color: #414141;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero-slider-wrap {
+    .slider-content {
+      h1 {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-slider-wrap {
+    img {
+      height: 500px;
+    }
+    .slider-content {
+      span {
+        font-size: 10px;
+        font-weight: 100;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-slider-wrap {
+    img {
+      height: 400px;
+    }
+    .slider-content {
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        margin-top: 0px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
